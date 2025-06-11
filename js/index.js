@@ -235,7 +235,7 @@ function applyWinningPattern(a, b, c) {
 function reset() {
 
     // remove winning pattern and X or O
-    for (var i = 0; i < state.length; i++) {
+    for (var i = 0; i < state.length; i++) { 
         document.getElementById(i).style.backgroundColor = "goldenrod";
         document.getElementById(i).innerText = "";
          document.getElementById(i).style.color = "white";
