@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+    <div class="maindiv" id="form-div">
+        <div class="TicTacToe">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        <div class="Players">
+            <label>Player-1 Name:</label>
+            <input id="name1" type="text" size="30px"><br><br>
+
+            <label>Player-2 Name:</label>
+            <input id="name2" type="text" size="30px"><br><br>
+        </div>
+        <div class="button0">
+            <button id="Start" onclick="setName(1)">Start Game</button><br><br>
+            <button id="without" onclick="setName(0)">Start without Name</button>
+        </div>
+    </div>
+
+    <div class="maindiv" id="game-div">
+        <div class="TicTacToe">
+            <h1>Tic Tac Toe</h1>
+        </div>
+    <div id="winner"></div>
+    <div class="score">
+        <div id="player1"> <span id="player1-name"> X </span> : <span id="p1-score"> -</span></div>
+        <div id="player2"> <span id="player2-name"> O </span> : <span id="p2-score"> -</span></div>
+    </div>
+    <div class="game-table">
+            <table class="full-table">
+                <tr class="row" id="row1">
+                    <td class="div" id="0"></td>
+                    <td class="div" id="1"></td>
+                    <td class="div" id="2"></td>
+                </tr>
+                <tr class="row">
+                    <td class="div" id="3"></td>
+                    <td class="div" id="4"></td>
+                    <td class="div" id="5"></td>
+                </tr>
+                <tr class="row" id="row3">
+                    <td class="div" id="6"></td>
+                    <td class="div" id="7"></td>
+                    <td class="div" id="8"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="last-button">
+            <button id="Reset" onclick="reset()">Reset Game</button>
+            <button id="Restart" onclick="restart()">Restart Game</button>
+        </div>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
